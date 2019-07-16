@@ -1,8 +1,3 @@
----
-title: 'Steganography'
-author: gordon fang
----
-
 圖像隱碼術 Steganography
 ===
 ## 大綱
