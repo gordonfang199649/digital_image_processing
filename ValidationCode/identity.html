@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		function reloadImage(){
+			document.getElementById('btn').disabled = true;
+			document.getElementById('identity').src = 'servlet/IndetityServlet';
+		}
+	</script>
+	
+	<img src ="servlet/IndetityServlet" id="identity" onload="btn.disabled = false; ">
+	<input type="button" value="換圖片" onclick="reloadImage()" id="btn"><br>
+	<form action="ValidateServlet" method="post">
+		  <label>請輸入驗證碼(大小不區分)</label><input type="text" name="checkCode">
+		  <input type="submit" value="送出">
+	</form>
+</body>
+</html>
